@@ -1,0 +1,42 @@
+unit unitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus, Vcl.ExtCtrls;
+
+type
+  TFormPrincipal = class(TForm)
+    pnlMain: TPanel;
+    pnlMenu: TPanel;
+    pnlFull: TPanel;
+    pnlTop: TPanel;
+    pnlPrincipal: TPanel;
+    pnlLogo: TPanel;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+uses
+  Dnit.View.Styles.Colors;
+
+{$R *.dfm}
+
+procedure TFormPrincipal.FormCreate(Sender: TObject);
+begin
+  pnlPrincipal.Color := COLOR_BACKGROUND;
+  pnlTop.Color := COLOR_BACKGROUND_TOP;
+  pnlMenu.Color := COLOR_BACKGROUND_MENU;
+  pnlLogo.Color := COLOR_BACKGROUND_DESTAK;
+end;
+
+end.
