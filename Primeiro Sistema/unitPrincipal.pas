@@ -38,6 +38,7 @@ type
     Button2: TButton;
     Image1: TImage;
     Label7: TLabel;
+    Image2: TImage;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
